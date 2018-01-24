@@ -7,28 +7,27 @@ See an example: https://kcts9.org/programs/whats-good-206/muslim-in-america-chan
 ```
 <script>
 var timecodes=[
-{id:'q1',timecode:5,label:'Why do Muslim women cover themselves?'},
-{id:'q2',timecode:464,label:'Why are there separate spaces for men and women at Mosque?'},
-{id:'q3',timecode:626,label:'Are Muslims treated equal in our society?'},
-{id:'q4',timecode:1009,label:'The political divide.'},
-{id:'q5',timecode:1144,label:'Islam and government.'},
-{id:'q6',timecode:1253,label:'What’s one thing you want people to know about Muslims?'}
+{id:'ch1',timecode:5,label:'Chapter 1 label'},
+{id:'ch2',timecode:464,label:'Chapter 2 label'},
+{id:'ch3',timecode:626,label:'Chapter 3 label'},
+{id:'ch4',timecode:1009,label:'Chapter 4 label'},
+{id:'ch5',timecode:1144,label:'Chapter 5 label'},
+{id:'ch6',timecode:1253,label:'Chapter 6 label'}
 ]
 </script>
 
 <div id="leapfrog-video-container">
-  <video id="video" poster="/sites/default/files/muslim-leapfrog-poster_0.jpg" width="100%">
-    <source src="//origin.kcts9.org/watchnow/muslim-group-discussion.mp4" type="video/mp4"> 
+  <video id="video" poster="[video thumbnail url]" width="100%">
+    <source src="[video src]" type="video/mp4"> 
     Your browser does not support the video tag. 
    </video>
 </div>
 <div class="sections">
-  <p style="margin-bottom:12px;"><strong>Sections</strong></p>
-  <p id="q1">Why do Muslim women cover themselves?</p>
-  <p id="q2">Why are there separate spaces for men and women at Mosque?</p>
-  <p id="q3">Are Muslims treated equal in our society?</p>
-  <p id="q4">The political divide.</p>
-  <p id="q5">Islam and government.</p>
-  <p id="q6">What’s one thing you want people to know about Muslims?</p>
+  <p id="ch1">Chapter 1</p>
+  <p id="ch2">Chapter 2</p>
+  <p id="ch3">Chapter 3</p>
+  <p id="ch4">Chapter 4</p>
+  <p id="ch5">Chapter 5</p>
+  <p id="ch6">Chapter 6</p>
 </div>
 ```
