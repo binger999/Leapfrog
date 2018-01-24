@@ -22,7 +22,7 @@ var timecodes=[
     Your browser does not support the video tag. 
    </video>
 </div>
-<div class="sections">
+<div class="leapfrog-video-sections">
   <p id="ch1">Chapter 1</p>
   <p id="ch2">Chapter 2</p>
   <p id="ch3">Chapter 3</p>
