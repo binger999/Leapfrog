@@ -1,0 +1,234 @@
+.leapfrog-video-container {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 20px;
+		width: 100%;
+		position: relative;
+}
+		/* Change these values to change the color scheme of the video module*/
+.leapfrog-video-container  .leap-video-controls {
+	background-color: rgba(0,0,0,0.9);
+}
+.leapfrog-video-container  .leap-video-controls .btn:hover {
+	background-color: rgba(192,192,192,0.3) !important
+}
+
+.leapfrog-video-container  .leap-video-controls .marker .tooltipcontent {
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+
+.leapfrog-video-container  .leap-video-controls input[type=range]::-webkit-slider-runnable-track {
+  background: rgba(192,192,192,.3);
+}
+
+.leapfrog-video-container  .leap-video-controls input[type=range]::-moz-range-track {
+  background: rgba(192,192,192,.3);
+}
+
+.leapfrog-video-container  .leap-video-controls input[type=range]::-ms-fill-lower {
+  background: rgba(192,192,192,.3);
+}
+
+.leapfrog-video-container  .leap-video-controls input[type=range]::-ms-fill-upper {
+  background: rgba(192,192,192,.3);
+}
+
+	/* custom slider thumb */
+.leapfrog-video-container  .leap-video-controls input[type=range]::-webkit-slider-thumb {
+  background: rgba(190,190, 190,.6);
+}
+
+.leapfrog-video-container  .leap-video-controls input[type=range]::-moz-range-thumb {
+  background: rgba(190,190,190,.6);
+}
+
+.leapfrog-video-container  .leap-video-controls input[type=range]::-ms-thumb {
+  background: rgba(190,190,190,.6);
+}
+
+.leapfrog-video-container  .leap-video-controls .marker {
+	background-color: #3579B5;
+}
+
+/* Sets the video container to fill rest of div while keeping 16:9 aspect ratio */
+.leapfrog-video-container .leap-video {
+	display: flex;
+}
+
+.leapfrog-video-container .leap-video-controls {
+	height: 40px;
+	display: inline-block;
+	width: 100%;
+	padding-top: 5px;
+	z-index: 2;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .2s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+.leapfrog-video-container .btn {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 5px;
+	border: 0;
+	padding: 3px;
+	color: #EEE;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	background-color:transparent;
+}
+
+.leapfrog-video-container .btn:hover {
+	cursor: pointer;
+}
+
+.leapfrog-video-container .leap-volume-bar {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	background: transparent;
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	position: relative;
+}
+
+.leapfrog-video-container .leap-seek-bar {
+	width: 100%;
+	margin: 0;
+	top:0;
+	position:absolute;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	background: transparent;
+}
+
+/* custom seek bar */
+.leapfrog-video-container input[type=range]:focus {
+	outline: none;
+}
+
+.leapfrog-video-container input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+}
+
+.leapfrog-video-container input[type=range]::-moz-range-track {
+	width: 100%;
+  height: 12px;
+  cursor: pointer;
+}
+
+.leapfrog-video-container input[type=range]::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+/* custom slider thumb */
+.leapfrog-video-container input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.leapfrog-video-container input[type=range]::-moz-range-thumb {
+	height: 12px;
+  width: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.leapfrog-video-container input[type=range]::-ms-thumb {
+	height: 12px;
+  width: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.leapfrog-video-container div.outerClass {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: calc(100% - 170px); /* 100% - other elements in video-controls */
+}
+
+.leapfrog-video-container .leap-seekOverlay {
+	width: 100%;
+	height: 12px;
+}
+
+.leapfrog-video-container .marker {
+	width: 5px;
+	height: 12px;
+	top: 0px;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+}
+
+.leapfrog-video-container .marker .tooltipcontent {
+	visibility: hidden;
+	font-family: @font-family-sans-serif-bold;
+	font-size:16px;
+	width: 120px;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	bottom: 700%;
+	left: 50%;
+	margin: -60px;
+}
+
+.leapfrog-video-container .marker:hover {
+	cursor: pointer;
+}
+
+.leapfrog-video-container .marker:hover .tooltipcontent {
+	visibility: visible !important;
+}
+
+.leapfrog-video-container .marker .tooltipcontent::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.leapfrog-video-container .video-cover {
+	position: absolute;
+	/*background-color: black;*/
+	opacity: 0.8;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 40px;
+}
+.leapfrog-video-sections .section{
+	cursor: pointer;
+}
